@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{% static "style1.css"%}"/>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="navbar-brand" href="{% url 'index' %}">BRAND</a>
+            <a class="nav-item nav-link" href="{% url 'admin:index' %}">Admin</a>
+            <a class="nav-item nav-link" href="{% url 'basicapp:other' %}">Other</a>
+            <a class="nav-item nav-link" href="{% url 'basicapp:relative' %}">Relative Templates</a>
+        </div>
+      </nav>
+
+
+    <div class="container">
+      {% block body_block %}
+<!--   any thing outside of this block will be inhereted if you  extend   -->
+      {%  endblock%}
+    </div>
+
+  </body>
+</html>
