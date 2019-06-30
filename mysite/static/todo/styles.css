@@ -1,0 +1,50 @@
+body {
+	background: rgba(44, 62, 80, .8);
+	font-family: 'Oswald', 'Futura', sans-serif;
+}
+#wrapper {
+	margin-top: 2% !important;
+}
+#content {
+	background: #ffffff;
+	padding: 25px;
+}
+#content > h2 {
+	font-size: 18px;
+	padding-top: 0;
+}
+.t10 {
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.p10 {
+	padding-bottom: 10px;
+}
+
+.t20 {
+	margin-top: 20px;
+}
+
+.lastdate {
+	font-size: 13px;
+}
+
+#space {
+	margin-bottom: 10px;
+}
+.todo-completed {
+	text-decoration: line-through;
+	background: rgba(149, 165, 166, .3);
+}
+.rgt{
+	margin-left: 100px;
+}
+
+
+
+footer {
+	margin-top: 20px;
+	color: white;
+	font-weight: lighter;
+}
